@@ -22,7 +22,7 @@ sudo apt install libb64-dev
 sudo apt-get install libboost-all-dev
 ```
 ### Configuration
-Go to `src/config.hpp` file and fill Signomix data. If you don't have an accont yet, just register and create your sensor dashboard https://signomix.com/app/#!
+Go to `src/config.hpp` file and fill Signomix data. If you don't have an accont yet, just register and create your sensor dashboard https://signomix.com/
 
 ### Building
 Now you can create build directory and build the project

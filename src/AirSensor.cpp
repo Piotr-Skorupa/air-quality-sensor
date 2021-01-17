@@ -39,7 +39,7 @@ void AirSensor::wakeUpSensor() try
 }
 catch (const std::exception& e)
 {
-    logger->error("[set sleep mode error] -> {0}", e.what());
+    logger->error("[wake up request error] -> {0}", e.what());
 }
 
 void AirSensor::sleepSensor() try
@@ -49,5 +49,5 @@ void AirSensor::sleepSensor() try
 }
 catch (const std::exception& e)
 {
-    logger->error("[set sleep mode error] -> {0}", e.what());
+    logger->error("[sleep request error] -> {0}", e.what());
 }
