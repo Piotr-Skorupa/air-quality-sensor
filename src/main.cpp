@@ -8,11 +8,11 @@
 #include <spdlog/sinks/stdout_color_sinks.h>
 
 #include "AirSensor.hpp"
+#include "config.hpp"
 #include "Timer.hpp"
 #include "WebClient.hpp"
 
 constexpr auto APPLICATION_NAME = "AQS-SERVICE";
-constexpr auto MEASUREMENT_PERIOD_SEC = 5 * 60; // 5 minutes
 
 static int signalNumber = 0;
 static bool isRunning = true;

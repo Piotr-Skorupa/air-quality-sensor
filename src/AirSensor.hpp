@@ -20,6 +20,9 @@ public:
     AirData getData();
 
 private:
+    void wakeUpSensor();
+    void sleepSensor();
+
     std::shared_ptr<spdlog::logger> logger;
     Stream stream;
     PMS pmsLib;

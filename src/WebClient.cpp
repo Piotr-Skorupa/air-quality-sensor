@@ -1,4 +1,5 @@
 #include "WebClient.hpp"
+#include "config.hpp"
 
 WebClient::WebClient(std::shared_ptr<spdlog::logger> logger, std::unique_ptr<signomix::HttpClient> client)
     : logger(std::move(logger))
@@ -10,13 +11,7 @@ WebClient::WebClient(std::shared_ptr<spdlog::logger> logger, std::unique_ptr<sig
 
 bool WebClient::signomixConnect()
 {
-    // Fill with proper values
-    const std::string sigLogin = "";
-    const std::string sigPass = "";
-    const std::string sigEui = "";
-    const std::string sigSecret = "";
-
-    auto response = client->signIn(sigLogin, sigPass, sigEui, sigSecret);
+    auto response = client->signIn(SIGNOMIX_LOGIN, SIGNOMIX_PASSWORD, SIGNOMIX_EUI, SIGNOMIX_SECRET);
     logger->info("SIGNOMIX RESPONSE: {0}", response.description);
     logger->info("HTTP code: {0}", response.httpCode);
     if (response.error)

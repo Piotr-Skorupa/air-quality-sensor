@@ -24,7 +24,7 @@ bool Stream::available()
 
 void Stream::write(uint8_t* command, int size)
 {
-    // not implemented
+    boost::asio::write(serial,boost::asio::buffer(command, size));
 }
 
 uint8_t Stream::read()
@@ -35,7 +35,7 @@ uint8_t Stream::read()
     }
 
     uint8_t byte{};
-    boost::asio::read(serial,boost::asio::buffer(&byte,1));
+    boost::asio::read(serial,boost::asio::buffer(&byte, 1));
 
     return byte;
 }

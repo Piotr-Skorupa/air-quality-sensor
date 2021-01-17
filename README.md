@@ -12,7 +12,7 @@ PMS air quality sensors library: https://github.com/fu-hsi/PMS.
 2. Air quality sensor PMS7003
 3. Adapter IDC 10pin 1,27mm - JST 1,25mm for PMS7003
 
-### Building
+### Dependencies
 First of all you need to install this packages on the new Raspberry
 ```bash
 sudo apt install g++
@@ -21,7 +21,11 @@ sudo apt install libcurl4-gnutls-dev
 sudo apt install libb64-dev
 sudo apt-get install libboost-all-dev
 ```
-Next you can create build directory and build the project
+### Configuration
+Go to `src/config.hpp` file and fill Signomix data. If you don't have an accont yet, just register and create your sensor dashboard https://signomix.com/app/#!
+
+### Building
+Now you can create build directory and build the project
 ```bash
 mkdir build
 cd build
