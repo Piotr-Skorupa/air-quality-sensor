@@ -1,6 +1,9 @@
 # Air Quality Sensor
 Home air quality sensor connected with Signomix platform.
 
+[![Total alerts](https://img.shields.io/lgtm/alerts/g/Piotr-Skorupa/air-quality-sensor.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Piotr-Skorupa/air-quality-sensor/alerts/)
+[![Total alerts](https://img.shields.io/lgtm/alerts/g/Piotr-Skorupa/air-quality-sensor.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Piotr-Skorupa/air-quality-sensor/alerts/)
+
 Program is running as aqs-service on Raspberry Pi Zero and sends data to https://signomix.com/.
 
 Get Signomix C++ header-only library from https://github.com/gskorupa/SignomixCPP.
