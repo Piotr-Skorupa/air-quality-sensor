@@ -50,12 +50,12 @@ void WebClient::sendData(const std::string& field, int data)
 
     if (not response.error and (response.httpCode == signomix::HTTP_CREATED))
     {
-    	logger->info("Data has been sent to the Signomix.");
+        logger->info("Data has been sent to the Signomix.");
     }
     else
     {
-	logger->error("Something went wrong. Data will not be send!");
-	logger->error("Response: {0}", response.description);
-	logger->error("HTTP {0}", response.httpCode);
+        logger->error("Something went wrong. Data will not be send!");
+        logger->error("Response: {0}", response.description);
+        logger->error("HTTP {0}", response.httpCode);
     }
 }
